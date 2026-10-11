@@ -19,6 +19,10 @@ console.log(equalsBtnElement)
 console.log(displayElement)
 
 /*----------------------------- Event Listeners -----------------------------*/
+/* for(let btn of BtnElements){
+    btn.addEventListener('click', calculate)
+} */
+
 for(let btn of BtnElements){
     btn.addEventListener('click', calculateAll)
 }
@@ -52,6 +56,7 @@ function calculate (event){
             num1 = null
             num2 = null
             operator = null
+            displayElement.textContent = ''
         }
         else{
             if(num1){
