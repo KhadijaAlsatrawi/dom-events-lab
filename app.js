@@ -104,6 +104,7 @@ function calculateAll(event){
     else if(event.target.className === 'button operator'){
         if(event.target.textContent === 'C'){
             calculation = ''
+            cal = []
             displayElement.textContent = ''
         }
         else{
